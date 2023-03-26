@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.controller.PostControllerTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 6.954 s <<< FAILURE! - in com.example.serwis.controller.PostControllerTest
+getMyPosts  Time elapsed: 0.376 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getMyPosts(PostControllerTest.java:94)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getMyPosts(PostControllerTest.java:94)
+
+addComment  Time elapsed: 0.138 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.addComment(PostControllerTest.java:135)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.addComment(PostControllerTest.java:135)
+
+addPost  Time elapsed: 0.14 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.addPost(PostControllerTest.java:56)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.addPost(PostControllerTest.java:56)
+
+getLikedPosts  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getLikedPosts(PostControllerTest.java:123)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getLikedPosts(PostControllerTest.java:123)
+
+searchPosts  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.searchPosts(PostControllerTest.java:64)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.searchPosts(PostControllerTest.java:64)
+
+getPost  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getPost(PostControllerTest.java:84)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getPost(PostControllerTest.java:84)
+
+getUserPosts  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getUserPosts(PostControllerTest.java:113)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getUserPosts(PostControllerTest.java:113)
+
+getPosts  Time elapsed: 0.047 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getPosts(PostControllerTest.java:45)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getPosts(PostControllerTest.java:45)
+
+getFollowedUsersPosts  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getFollowedUsersPosts(PostControllerTest.java:74)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.PostControllerTest.getFollowedUsersPosts(PostControllerTest.java:74)
+

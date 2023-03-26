@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.repository.ProfileImageRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in com.example.serwis.repository.ProfileImageRepositoryTest
+findImageByUserId  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.serwis.repository.ProfileImageRepositoryTest.findImageByUserId(ProfileImageRepositoryTest.java:20)
+

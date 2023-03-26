@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.repository.PostRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.906 s <<< FAILURE! - in com.example.serwis.repository.PostRepositoryTest
+shouldFindPostById  Time elapsed: 0.172 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindPostById(PostRepositoryTest.java:33)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindPostById(PostRepositoryTest.java:33)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`serwistest`.`post`, CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindPostById(PostRepositoryTest.java:33)
+
+shouldFindPostsByUserId  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindPostsByUserId(PostRepositoryTest.java:40)
+
+shouldFindPostByText  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindPostByText(PostRepositoryTest.java:50)
+
+shouldFindFollowedPosts  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindFollowedPosts(PostRepositoryTest.java:45)
+
+shouldFindComments  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.PostRepositoryTest.shouldFindComments(PostRepositoryTest.java:55)
+
+shouldLikedPosts  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.PostRepositoryTest.shouldLikedPosts(PostRepositoryTest.java:60)
+

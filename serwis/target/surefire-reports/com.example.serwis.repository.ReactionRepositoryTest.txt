@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.repository.ReactionRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.11 s <<< FAILURE! - in com.example.serwis.repository.ReactionRepositoryTest
+shouldFindUserReaction  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.serwis.repository.ReactionRepositoryTest.shouldFindUserReaction(ReactionRepositoryTest.java:22)
+
+shouldFindPostReaction  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.serwis.repository.ReactionRepositoryTest.shouldFindPostReaction(ReactionRepositoryTest.java:34)
+
+shouldFindPostReactions  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.ReactionRepositoryTest.shouldFindPostReactions(ReactionRepositoryTest.java:28)
+

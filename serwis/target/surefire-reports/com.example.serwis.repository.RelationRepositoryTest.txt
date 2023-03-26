@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.repository.RelationRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 0.203 s <<< FAILURE! - in com.example.serwis.repository.RelationRepositoryTest
+findUserRelation  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.serwis.repository.RelationRepositoryTest.findUserRelation(RelationRepositoryTest.java:28)
+
+findBlockedUsersId  Time elapsed: 0.031 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	at com.example.serwis.repository.RelationRepositoryTest.findBlockedUsersId(RelationRepositoryTest.java:22)
+

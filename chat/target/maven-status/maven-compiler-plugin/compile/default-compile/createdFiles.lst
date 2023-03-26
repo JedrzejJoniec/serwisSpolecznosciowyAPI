@@ -1,0 +1,8 @@
+com\example\chat\repository\ChatRepository.class
+com\example\chat\entity\Chat.class
+com\example\chat\pojo\Message.class
+com\example\chat\service\ChatService.class
+com\example\chat\security\SecurityConfig.class
+com\example\chat\ChatApplication.class
+com\example\chat\controller\ChatController.class
+com\example\chat\security\JwtAuthorizationFilter.class

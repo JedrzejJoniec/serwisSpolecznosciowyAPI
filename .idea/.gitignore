@@ -1,0 +1,12 @@
+# Default ignored files
+/application.properties
+/application-prod.properties
+/security/target/classes/application-dev.properties
+/docker-compose.yml
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml

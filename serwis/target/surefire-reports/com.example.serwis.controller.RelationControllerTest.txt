@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.controller.RelationControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.242 s <<< FAILURE! - in com.example.serwis.controller.RelationControllerTest
+unfollowOrUnblock  Time elapsed: 0.126 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.RelationControllerTest.unfollowOrUnblock(RelationControllerTest.java:45)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.RelationControllerTest.unfollowOrUnblock(RelationControllerTest.java:45)
+
+followOrBlock  Time elapsed: 0.116 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.RelationControllerTest.followOrBlock(RelationControllerTest.java:36)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.RelationControllerTest.followOrBlock(RelationControllerTest.java:36)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.repository.UserRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! - in com.example.serwis.repository.UserRepositoryTest
+findBlockedUsers  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.UserRepositoryTest.findBlockedUsers(UserRepositoryTest.java:28)
+
+findUsersByUsername  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.example.serwis.repository.UserRepositoryTest.findUsersByUsername(UserRepositoryTest.java:22)
+

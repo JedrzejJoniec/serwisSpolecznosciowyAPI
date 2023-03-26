@@ -1,0 +1,13 @@
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Repository\UserRepository.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Handlers\AuthenticationSuccessHandler.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\SecurityConfig.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Handlers\AuthenticationFailureHandler.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\pojo\LoginCredentials.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\UsersDetails\UserDetailsImpl.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Filters\JwtAuthenticationFilter.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\UsersDetails\UserDetailsServiceImpl.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\SecurityApplication.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\service\UserService.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Filters\JwtAuthorizationFilter.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Controller\Controller.java
+C:\Users\jedrz\IdeaProjects\projekt\security\src\main\java\com\example\security\Entity\UserEntity.java

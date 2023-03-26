@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.controller.UserControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.266 s <<< FAILURE! - in com.example.serwis.controller.UserControllerTest
+searchUsers  Time elapsed: 0.032 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.searchUsers(UserControllerTest.java:56)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.searchUsers(UserControllerTest.java:56)
+
+changePassword  Time elapsed: 0.125 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.changePassword(UserControllerTest.java:67)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.changePassword(UserControllerTest.java:67)
+
+getLoggedInUser  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.getLoggedInUser(UserControllerTest.java:84)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.getLoggedInUser(UserControllerTest.java:84)
+
+getBlockedUsers  Time elapsed: 0.047 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.getBlockedUsers(UserControllerTest.java:90)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.getBlockedUsers(UserControllerTest.java:90)
+
+getUsers  Time elapsed: 0.031 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.getUsers(UserControllerTest.java:46)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.UserControllerTest.getUsers(UserControllerTest.java:46)
+

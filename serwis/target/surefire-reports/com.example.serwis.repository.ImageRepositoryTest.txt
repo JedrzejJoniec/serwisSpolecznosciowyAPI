@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.repository.ImageRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 1.347 s <<< FAILURE! - in com.example.serwis.repository.ImageRepositoryTest
+shouldFindIfPostHasImage  Time elapsed: 0.078 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <1>
+	at com.example.serwis.repository.ImageRepositoryTest.shouldFindIfPostHasImage(ImageRepositoryTest.java:25)
+
+shouldFindImageByPostId  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.serwis.repository.ImageRepositoryTest.shouldFindImageByPostId(ImageRepositoryTest.java:19)
+

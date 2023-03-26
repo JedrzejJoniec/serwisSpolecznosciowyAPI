@@ -1,0 +1,8 @@
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\ChatApplication.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\service\ChatService.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\controller\ChatController.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\pojo\Message.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\security\JwtAuthorizationFilter.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\entity\Chat.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\repository\ChatRepository.java
+C:\Users\jedrz\IdeaProjects\projekt\chat\src\main\java\com\example\chat\security\SecurityConfig.java

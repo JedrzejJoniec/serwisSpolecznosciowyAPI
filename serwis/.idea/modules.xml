@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/serwis/demo.iml" filepath="$PROJECT_DIR$/serwis/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/serwis.iml" filepath="$PROJECT_DIR$/.idea/serwis.iml" />
+    </modules>
+  </component>
+</project>

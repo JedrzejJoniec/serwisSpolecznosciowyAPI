@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.serwis.controller.ReactionControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.22 s <<< FAILURE! - in com.example.serwis.controller.ReactionControllerTest
+addReaction  Time elapsed: 0.094 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.ReactionControllerTest.addReaction(ReactionControllerTest.java:38)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.ReactionControllerTest.addReaction(ReactionControllerTest.java:38)
+
+deleteReaction  Time elapsed: 0.126 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at com.example.serwis.controller.ReactionControllerTest.deleteReaction(ReactionControllerTest.java:47)
+Caused by: java.lang.NullPointerException
+	at com.example.serwis.controller.ReactionControllerTest.deleteReaction(ReactionControllerTest.java:47)
+
