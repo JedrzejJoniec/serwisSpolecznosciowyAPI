@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/broker/broker.iml" filepath="$PROJECT_DIR$/broker/broker.iml" />
       <module fileurl="file://$PROJECT_DIR$/chat/chat.iml" filepath="$PROJECT_DIR$/chat/chat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/security/demo.iml" filepath="$PROJECT_DIR$/security/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/serwis/demo (1).iml" filepath="$PROJECT_DIR$/serwis/demo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/posts/posts.iml" filepath="$PROJECT_DIR$/posts/posts.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/projekt.iml" filepath="$PROJECT_DIR$/.idea/projekt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/token.iml" filepath="$PROJECT_DIR$/security/token.iml" />
     </modules>
   </component>
 </project>

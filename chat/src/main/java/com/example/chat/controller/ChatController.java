@@ -43,9 +43,8 @@ public class ChatController {
     }
 
     @PostMapping("/rest/{receiver}/addMessage")
-    public String sendMessage(@PathVariable String receiver, @RequestParam("author") String author, @RequestBody String text) throws Exception {
+    public void sendMessage(@PathVariable String receiver, @RequestParam("author") String author, @RequestBody String text) throws Exception {
         chatService.addMessage(author, receiver, text);
-        return "hello";
     }
     @GetMapping("/contacts/{username}")
     public List<String> getContacts(@PathVariable String username, Authentication authentication) {

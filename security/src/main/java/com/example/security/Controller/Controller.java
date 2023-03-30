@@ -27,11 +27,6 @@ public class Controller {
     @Autowired
     UserService userService;
 
-    @GetMapping("/elo")
-    public String elo() {
-        System.out.println("ELOOOO=====================================");
-        return "elo";
-    }
 
     @PostMapping("/users/register/{username}")
     public ResponseEntity register(@PathVariable String username, @RequestBody String password) {

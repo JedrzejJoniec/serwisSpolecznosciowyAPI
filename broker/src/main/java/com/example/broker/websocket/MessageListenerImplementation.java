@@ -21,9 +21,9 @@ public class MessageListenerImplementation implements MessageListener {
     public MessageListenerImplementation(String myValue) {
         this.address = myValue;
     }
+
     @Override
     public void onMessage(Message message) {
-        System.out.println(address + " -------------------------------------------");
         String uri = address + message.getMessageProperties().getReceivedRoutingKey() + "/notification";
         RestTemplate restTemplate = new RestTemplate();
 

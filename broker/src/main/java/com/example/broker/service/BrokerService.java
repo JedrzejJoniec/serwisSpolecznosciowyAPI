@@ -38,6 +38,9 @@ public class BrokerService {
     @Value("${spring.address}")
     private String address;
 
+    @Value("${spring.rabbitmq.host}")
+    private String host;
+
     @Autowired
     private RabbitTemplate rabbitTemplate;
     @Autowired
@@ -101,10 +104,13 @@ public class BrokerService {
         simpleMessageListenerContainer.addQueues(queue);
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
 
-        //connectionFactory.setHost("rabbit");
-        //connectionFactory.setPort(5672);
+
         if (!rabbitUri.equals("")) {
             connectionFactory.setUri(rabbitUri);
+        }
+       else {
+            connectionFactory.setHost(host);
+            connectionFactory.setPort(5672);
         }
 
         connectionFactory.setUsername(rabbitUsername);
