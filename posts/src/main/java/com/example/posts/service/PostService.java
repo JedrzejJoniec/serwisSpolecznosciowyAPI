@@ -114,11 +114,7 @@ public class PostService {
         postRepository.deleteReactionByPostId(postId);
         postRepository.deletePostComments(postId);
         postRepository.deleteImageByPostId(postId);
-        try {
-            imageService.deleteImage(imageService.getImageByPostId(postId));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
 
