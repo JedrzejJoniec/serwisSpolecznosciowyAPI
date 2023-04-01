@@ -3,7 +3,7 @@ Serwis społecznościowy API to projekt części serwerowej serwisu społecznoś
 napisaną za pomocą frameworka Angular.
 
 ## Budowa systemu 
-![alt text](Images/system.png)
+![alt text](Images/schemat.png)
 
 Część serwerowa projektu jest podzielona na cztery aplikacje z których każda odpowiada za część usług oferowanych przez system.
 
