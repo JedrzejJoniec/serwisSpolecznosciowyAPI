@@ -59,9 +59,10 @@ public class BrokerController {
 
     }
     @DeleteMapping("/deleteNotifications/{blockedUser}")
-    public void deleteNotifications(Authentication authentication, @PathVariable("blockedUser") String blockedUserUsername) throws Exception {
-        brokerService.deleteNotifications(authentication.getName(),blockedUserUsername);
+    public void deleteUserNotifications(Authentication authentication, @PathVariable("blockedUser") String blockedUserUsername) throws Exception {
+        brokerService.deleteUserNotifications(authentication.getName(),blockedUserUsername);
     }
+
 
     @PostMapping("/createQueue")
     public void createQueue(@RequestParam("username") String username) {

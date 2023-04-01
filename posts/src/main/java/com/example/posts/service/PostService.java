@@ -80,7 +80,7 @@ public class PostService {
         return postMapper.parsePosts(postsJPA, userId);
     }
 
-    public void editPost(long postId, String newBody, MultipartFile file) throws IOException {
+    public void editPost(long postId, String newBody, MultipartFile file, boolean changeImage) throws IOException {
         Optional<PostEntity> postOptional = postRepository.findById(postId);
         PostEntity post = postOptional.get();
         post.setBody(newBody);
@@ -92,7 +92,7 @@ public class PostService {
                 imageService.addImageToPost(post, file);
             }
         }
-        else if (imageService.checkIfPostHasImage(postId)) {
+        else if (changeImage) {
             imageService.deleteImage(imageService.getImageByPostId(postId));
         }
         postRepository.save(post);

@@ -87,8 +87,8 @@ public class BrokerService {
         notificationRepository.setUserNotificationsSeen(username);
 
     }
-    public void deleteNotifications(String loggedInUserUsername, String blockedUserUsername) throws Exception {
-        notificationRepository.deleteNotifications(loggedInUserUsername, blockedUserUsername);
+    public void deleteUserNotifications(String loggedInUserUsername, String blockedUserUsername) throws Exception {
+        notificationRepository.deleteUserNotifications(loggedInUserUsername, blockedUserUsername);
     }
 
     public void createQueue(String username) {

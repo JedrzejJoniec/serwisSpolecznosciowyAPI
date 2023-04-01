@@ -31,17 +31,19 @@ public class PostController {
         return ResponseEntity.ok(userPosts);
     }
     @PostMapping("/posts/file")
-    public void addPost(Authentication authentication, @RequestParam("body") String postBody,
+    public ResponseEntity addPost(Authentication authentication, @RequestParam("body") String postBody,
     @RequestPart(name = "file", required = false) MultipartFile file) throws IOException {
         String username = authentication.getName();
         postService.addPost(userService.getUserIdByUsername(username), postBody, file);
+        return new ResponseEntity(HttpStatus.OK);
 
     }
     @PostMapping("/post/{id}/comments")
-    public void addComment(@PathVariable(name = "id") int parentPostId, Authentication authentication, @RequestParam("body") String body,
+    public ResponseEntity addComment(@PathVariable(name = "id") int parentPostId, Authentication authentication, @RequestParam("body") String body,
                                            @RequestPart(name = "file",  required = false) MultipartFile file) throws IOException {
         String username = authentication.getName();
         postService.addComment(userService.getUserIdByUsername(username), body, parentPostId, file);
+        return new ResponseEntity(HttpStatus.OK);
     }
     @GetMapping("/search/posts/{parameter}")
     public ResponseEntity<List<Post>> searchPosts(@PathVariable String parameter, Authentication authentication) throws IOException {
@@ -67,15 +69,16 @@ public class PostController {
         List<Post> userPosts = postService.getMyPosts(userService.getUserIdByUsername(username));
         return ResponseEntity.ok(userPosts);
     }
-    @PutMapping("/myPosts/post/{id}")
-    public void editPost(@PathVariable long id, @RequestParam("body") String newBody,
-                                         @RequestPart(name = "file", required = false) MultipartFile file) throws IOException {
-       postService.editPost(id, newBody, file);
+    @PutMapping("/myPosts/post/{id}/{changeImage}")
+    public ResponseEntity editPost(@PathVariable("id") long id, @RequestParam("body") String newBody,
+                                         @RequestPart(name = "file", required = false) MultipartFile file,@PathVariable("changeImage") boolean changeImage) throws IOException {
+       postService.editPost(id, newBody, file, changeImage);
+       return new ResponseEntity(HttpStatus.OK);
     }
     @DeleteMapping("/myPosts/post/{id}")
-    public ResponseEntity<String> deletePost(@PathVariable long id) {
+    public ResponseEntity deletePost(@PathVariable long id) {
         postService.deletePost(id);
-        return new ResponseEntity<>("Post deleted", HttpStatus.OK);
+        return new ResponseEntity(HttpStatus.OK);
     }
     @GetMapping("/users/{username}")
     public ResponseEntity<List<Post>> getUserPosts(@PathVariable String username) throws IOException {

@@ -23,7 +23,8 @@ public interface NotificationRepository extends JpaRepository<Notification, Long
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM notification WHERE username = :loggedInUserUsername AND author = :blockedUserUsername", nativeQuery = true)
-    void deleteNotifications(@Param("loggedInUserUsername") String loggedInUserUsername, @Param("blockedUserUsername") String blockedUserUsername);
+    void deleteUserNotifications(@Param("loggedInUserUsername") String loggedInUserUsername, @Param("blockedUserUsername") String blockedUserUsername);
+
 }
 
 

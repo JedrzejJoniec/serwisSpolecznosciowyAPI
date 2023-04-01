@@ -3,6 +3,8 @@ package com.example.chat.controller;
 import com.example.chat.pojo.Message;
 import com.example.chat.service.ChatService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,8 +36,9 @@ public class ChatController {
         return chat;
     }
     @DeleteMapping("/deleteChat/{blockedUserUsername}")
-    public void deleteChat(Authentication authentication, @PathVariable("blockedUserUsername") String blockedUserUsername) {
+    public ResponseEntity deleteChat(Authentication authentication, @PathVariable("blockedUserUsername") String blockedUserUsername) {
         chatService.deleteChat(authentication.getName(), blockedUserUsername);
+        return new ResponseEntity(HttpStatus.OK);
     }
     @GetMapping("/chat")
     public List<Message> getChat(@RequestParam("member1") String member1, @RequestParam("member2") String member2) {

@@ -25,7 +25,6 @@ public class UserController {
     @GetMapping("/user/{username}")
     public ResponseEntity<User> getUser(@PathVariable String username, Authentication authentication) throws JsonProcessingException {
         User user = userService.getUser(username, userService.getUserIdByUsername(authentication.getName()));
-        System.out.println(user);
         return ResponseEntity.ok(user);
     }
     @GetMapping("/search/users/{username}")
