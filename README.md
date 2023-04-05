@@ -1,6 +1,6 @@
 # Serwis Spolecznosciowy - API
 Serwis społecznościowy API to projekt części serwerowej serwisu społecznościowego napisanego za pomocą Javy i frameworka Spring boot. Jest on połączony z aplikacją kliencką
-napisaną za pomocą frameworka Angular.
+napisaną za pomocą frameworka Angular. Aplikacja jest dostępna pod adresem https://myface.azurewebsites.net/ ale z powodu kosztów utrzymania na platformie Azure jest ona wyłączona (może zostac uruchomiona w celach prezentacyjnych)
 
 ## Budowa systemu 
 ![alt text](ImagesAPI/schemat.png)
